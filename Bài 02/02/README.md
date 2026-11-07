@@ -82,8 +82,10 @@ Truy cập trang chủ: http://localhost:3000/
 
 ## 📸 Hình ảnh minh chứng thực tế (Ảnh chụp thật khi chạy localhost:3000)
 
-Dưới đây là ảnh chụp màn hình thực tế của ứng dụng đang chạy tại `http://localhost:3000` với đầy đủ Họ tên và Mã sinh viên:
+### 1. Khởi chạy máy chủ trên Terminal / PowerShell
+![Khởi chạy server Bài 02 - Phần 02](./terminal.png)
 
+### 2. Kết quả hiển thị trang chủ trên trình duyệt (localhost:3000)
 ![Minh chứng kết quả chạy Bài 02 - Phần 02](./screenshot.png)
 
 ---

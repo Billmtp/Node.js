@@ -71,8 +71,10 @@ Sinh viên: Lê Trần Thạnh
 
 ## 📸 Hình ảnh minh chứng thực tế (Ảnh chụp thật khi chạy localhost:3000)
 
-Dưới đây là ảnh chụp màn hình thực tế khi server đang chạy và được truy cập tại cổng `3000`:
+### 1. Khởi chạy máy chủ trên Terminal / PowerShell
+![Khởi chạy server Bài 02 - Phần 01](./terminal.png)
 
+### 2. Kết quả hiển thị trên trình duyệt (localhost:3000)
 ![Minh chứng kết quả chạy Bài 02 - Phần 01](./screenshot.png)
 
 ---

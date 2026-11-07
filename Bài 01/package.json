@@ -1,0 +1,16 @@
+{
+  "name": "bai-01-hello-nodejs",
+  "version": "1.0.0",
+  "description": "Bài 01: Cài đặt Node.js LTS, kiểm tra phiên bản và chạy chương trình hello.js",
+  "main": "hello.js",
+  "scripts": {
+    "start": "node hello.js"
+  },
+  "keywords": [
+    "nodejs",
+    "hello-world",
+    "bai-01"
+  ],
+  "author": "Lê Trần Thạnh - CD-CNTT18B27",
+  "license": "ISC"
+}

@@ -1,6 +1,6 @@
 # KHO LƯU TRỮ BÀI TẬP NODE.JS (NODE.JS REPOSITORY)
 
-Sinh viên: **Lê Trần Thịnh**  
+Sinh viên: **Lê Trần Thạnh**  
 Mã sinh viên: **CD-CNTT18B27**  
 Lớp: **CĐ-CNTT18B**  
 Trường: **Cao đẳng Kỹ thuật Công nghệ Nha Trang**  

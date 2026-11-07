@@ -4,7 +4,7 @@
  *         Khi truy cập trang chủ, trả về HTML có họ tên và mã sinh viên.
  *         Nộp liên kết GitHub và mô tả cách chạy.
  * 
- * Sinh viên thực hiện: Lê Trần Thịnh
+ * Sinh viên thực hiện: Lê Trần Thạnh
  * Mã sinh viên (MSSV): CD-CNTT18B27
  * Lớp: CĐ-CNTT18B
  * Trường: Cao đẳng Kỹ thuật Công nghệ Nha Trang
@@ -328,7 +328,7 @@ const server = http.createServer((req, res) => {
             <div class="profile-box">
                 <div class="info-row">
                     <span class="info-label">👤 Họ và tên:</span>
-                    <span class="info-value fullname">Lê Trần Thịnh</span>
+                    <span class="info-value fullname">Lê Trần Thạnh</span>
                 </div>
                 <div class="info-row">
                     <span class="info-label">🆔 Mã sinh viên (MSSV):</span>
@@ -368,7 +368,7 @@ const server = http.createServer((req, res) => {
         </div>
 
         <div class="card-footer">
-            Bản quyền © 2026 <strong>Lê Trần Thịnh - CD-CNTT18B27</strong>. Bài tập Node.js lập trình mạng.
+            Bản quyền © 2026 <strong>Lê Trần Thạnh - CD-CNTT18B27</strong>. Bài tập Node.js lập trình mạng.
         </div>
     </div>
 </body>
@@ -400,7 +400,7 @@ server.listen(PORT, HOST, () => {
     console.log(`====================================================`);
     console.log(`[Bài 02 - Phần 02] Ứng dụng Node.js HTTP Server`);
     console.log(`Máy chủ đang lắng nghe tại: http://${HOST}:${PORT}`);
-    console.log(`Họ và tên sinh viên: Lê Trần Thịnh`);
+    console.log(`Họ và tên sinh viên: Lê Trần Thạnh`);
     console.log(`Mã sinh viên (MSSV) : CD-CNTT18B27`);
     console.log(`Truy cập trang chủ: http://${HOST}:${PORT}/`);
     console.log(`====================================================`);

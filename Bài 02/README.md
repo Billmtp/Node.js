@@ -1,6 +1,6 @@
 # BÀI TẬP 02: LẬP TRÌNH HTTP SERVER VỚI NODE.JS
 
-* **Họ và tên:** Lê Trần Thịnh
+* **Họ và tên:** Lê Trần Thạnh
 * **MSSV:** CD-CNTT18B27
 * **Lớp:** CĐ-CNTT18B
 * **Khoa / Trường:** Khoa Điện - Điện tử / Trường Cao đẳng Kỹ thuật Công nghệ Nha Trang

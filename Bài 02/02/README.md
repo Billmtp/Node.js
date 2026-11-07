@@ -6,7 +6,7 @@
 ---
 
 ## 👨‍🎓 Thông tin sinh viên & Báo cáo bài nộp
-* **Họ và tên:** Lê Trần Thịnh
+* **Họ và tên:** Lê Trần Thạnh
 * **Mã sinh viên (MSSV):** CD-CNTT18B27
 * **Lớp:** CĐ-CNTT18B
 * **Khoa / Trường:** Khoa Điện - Điện tử / Trường Cao đẳng Kỹ thuật Công nghệ Nha Trang
@@ -59,7 +59,7 @@ Khi khởi chạy thành công, console sẽ in ra log chi tiết:
 ====================================================
 [Bài 02 - Phần 02] Ứng dụng Node.js HTTP Server
 Máy chủ đang lắng nghe tại: http://localhost:3000
-Họ và tên sinh viên: Lê Trần Thịnh
+Họ và tên sinh viên: Lê Trần Thạnh
 Mã sinh viên (MSSV) : CD-CNTT18B27
 Truy cập trang chủ: http://localhost:3000/
 ====================================================
@@ -72,7 +72,7 @@ Truy cập trang chủ: http://localhost:3000/
   http://localhost:3000/
   ```
 * Trang chủ sẽ hiển thị giao diện hồ sơ sinh viên với đầy đủ:
-  - **Họ và tên:** Lê Trần Thịnh
+  - **Họ và tên:** Lê Trần Thạnh
   - **Mã sinh viên:** CD-CNTT18B27
   - **Lớp:** CĐ-CNTT18B
   - **Đơn vị đào tạo:** Trường CĐ Kỹ thuật Công nghệ Nha Trang

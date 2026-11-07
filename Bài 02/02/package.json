@@ -6,6 +6,6 @@
   "scripts": {
     "start": "node server.js"
   },
-  "author": "Lê Trần Thịnh - CD-CNTT18B27",
+  "author": "Lê Trần Thạnh - CD-CNTT18B27",
   "license": "ISC"
 }

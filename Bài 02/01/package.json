@@ -6,6 +6,6 @@
   "scripts": {
     "start": "node server.js"
   },
-  "author": "Lê Trần Thịnh",
+  "author": "Lê Trần Thạnh",
   "license": "ISC"
 }

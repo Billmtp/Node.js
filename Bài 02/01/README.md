@@ -6,7 +6,7 @@
 ---
 
 ## 👨‍🎓 Thông tin sinh viên
-* **Họ và tên:** Lê Trần Thịnh
+* **Họ và tên:** Lê Trần Thạnh
 * **Mã sinh viên (MSSV):** CD-CNTT18B27
 * **Lớp:** CĐ-CNTT18B
 * **Khoa / Trường:** Khoa Điện - Điện tử / Trường Cao đẳng Kỹ thuật Công nghệ Nha Trang
@@ -56,7 +56,7 @@ Khi khởi động thành công, màn hình console sẽ hiển thị thông bá
 ====================================================
 [Bài 02 - Phần 01] HTTP Server đang chạy thành công!
 Truy cập máy chủ tại: http://localhost:3000
-Sinh viên: Lê Trần Thịnh
+Sinh viên: Lê Trần Thạnh
 ====================================================
 ```
 
@@ -65,7 +65,7 @@ Sinh viên: Lê Trần Thịnh
   ```
   http://localhost:3000
   ```
-* Trang web sẽ hiển thị thông tin tên sinh viên **Lê Trần Thịnh** cùng thông số máy chủ HTTP.
+* Trang web sẽ hiển thị thông tin tên sinh viên **Lê Trần Thạnh** cùng thông số máy chủ HTTP.
 
 ---
 

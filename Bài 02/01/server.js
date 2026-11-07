@@ -2,7 +2,7 @@
  * BÀI 02 - PHẦN 01: HTTP Server bằng Node.js thuần
  * Yêu cầu: Tạo HTTP server bằng Node.js thuần; truy cập localhost:3000 và trả về trang HTML chứa tên sinh viên.
  * 
- * Sinh viên thực hiện: Lê Trần Thịnh
+ * Sinh viên thực hiện: Lê Trần Thạnh
  * Lớp: CĐ-CNTT18B
  * MSSV: CD-CNTT18B27
  */
@@ -253,7 +253,7 @@ const server = http.createServer((req, res) => {
         <div class="student-card">
             <div class="avatar-wrap">👨‍💻</div>
             <div class="student-label">Tên Sinh Viên</div>
-            <div class="student-name">Lê Trần Thịnh</div>
+            <div class="student-name">Lê Trần Thạnh</div>
         </div>
 
         <div class="server-info-grid">
@@ -276,7 +276,7 @@ const server = http.createServer((req, res) => {
         </div>
 
         <div class="footer">
-            Mã nguồn đã được tải lên GitHub Repository: <b>Node.js</b> | Thiết kế bởi <b>Lê Trần Thịnh</b>
+            Mã nguồn đã được tải lên GitHub Repository: <b>Node.js</b> | Thiết kế bởi <b>Lê Trần Thạnh</b>
         </div>
     </div>
 </body>
@@ -289,6 +289,6 @@ server.listen(PORT, HOST, () => {
     console.log(`====================================================`);
     console.log(`[Bài 02 - Phần 01] HTTP Server đang chạy thành công!`);
     console.log(`Truy cập máy chủ tại: http://${HOST}:${PORT}`);
-    console.log(`Sinh viên: Lê Trần Thịnh`);
+    console.log(`Sinh viên: Lê Trần Thạnh`);
     console.log(`====================================================`);
 });

@@ -1,0 +1,11 @@
+{
+  "name": "bai03-bt01",
+  "version": "1.0.0",
+  "description": "Bài 03 - Bt01: Lọc danh sách sinh viên có điểm >= 5 bằng Class và Arrow Function",
+  "main": "bai01.js",
+  "scripts": {
+    "start": "node bai01.js"
+  },
+  "author": "Lê Trần Thạnh - CD-CNTT18B27",
+  "license": "ISC"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "bai03-bt03",
+  "version": "1.0.0",
+  "description": "Bài 03 - Bt03: Sắp xếp bảng xếp hạng sinh viên giảm dần và xử lý async/await",
+  "main": "bai03.js",
+  "scripts": {
+    "start": "node bai03.js"
+  },
+  "author": "Lê Trần Thạnh - CD-CNTT18B27",
+  "license": "ISC"
+}

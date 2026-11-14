@@ -1,0 +1,11 @@
+{
+  "name": "bai03-bt02",
+  "version": "1.0.0",
+  "description": "Bài 03 - Bt02: Thống kê điểm trung bình, xếp loại và tìm sinh viên thủ khoa",
+  "main": "bai02.js",
+  "scripts": {
+    "start": "node bai02.js"
+  },
+  "author": "Lê Trần Thạnh - CD-CNTT18B27",
+  "license": "ISC"
+}

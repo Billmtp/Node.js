@@ -27,6 +27,7 @@ Bài 03/Node js/Bai03/bt2/
 ├── bai02.js          # Mã nguồn Web Server HTTP xử lý định tuyến (/) và (/about)
 ├── package.json      # Cấu hình dự án và npm script
 ├── step1_cd.png      # Ảnh chụp thực tế lệnh di chuyển thư mục cd
+├── terminal_server.png # Ảnh chụp thực tế Terminal chạy node bai02.js
 ├── browser_home.png  # Ảnh chụp thực tế trình duyệt truy cập http://localhost:3000
 ├── browser_about.png # Ảnh chụp thực tế trình duyệt truy cập http://localhost:3000/about
 ├── browser_404.png   # Ảnh chụp thực tế trình duyệt khi gặp đường dẫn 404
@@ -52,6 +53,10 @@ cd "Bài 03/Node js/Bai03/bt2"
 node bai02.js
 ```
 *(Hoặc dùng lệnh `npm start`)*
+
+📸 **Ảnh chụp màn hình thực tế Terminal khi khởi chạy server thành công:**
+
+![Bước 2: Khởi chạy server node bai02.js](./terminal_server.png)
 
 ---
 

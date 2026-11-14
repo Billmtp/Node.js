@@ -52,6 +52,10 @@ node bai03.js
 ```
 *(Hoặc dùng lệnh `npm start`)*
 
+📸 **Ảnh chụp màn hình thực tế khi chạy lệnh và hoàn thành 4 bước:**
+
+![Bước 2: Chạy lệnh node bai03.js và kết quả](./step2_run.png)
+
 ---
 
 ## 📊 Kết quả thực thi chi tiết trong Terminal

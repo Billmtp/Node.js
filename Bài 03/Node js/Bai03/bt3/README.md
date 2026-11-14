@@ -1,11 +1,13 @@
-# BÀI TẬP 03 - BT03: SẮP XẾP BẢNG XẾP HẠNG SINH VIÊN BẰNG ARROW FUNCTION & ASYNC/AWAIT
+# BÀI TẬP 03 - BT03: THAO TÁC VỚI MODULE FS (FILE SYSTEM)
 
-## 📌 Yêu cầu bài tập
-> **Nội dung:**
-> - Tiếp tục phát triển danh sách `SinhVien`.
-> - Sử dụng hàm mũi tên (Arrow Function) kết hợp phương thức `.sort((a, b) => b.diem - a.diem)` để sắp xếp danh sách theo thứ tự điểm giảm dần.
-> - Sử dụng Promise và async/await mô phỏng việc tải dữ liệu bất đồng bộ.
-> - Hiển thị bảng xếp hạng chi tiết ra màn hình console.
+## 📌 Yêu cầu đề bài
+> **Yêu cầu bài thực hành:** Tạo tập tin `bai03.js` sử dụng module `fs`:
+> - Tạo tập tin `thongtin.txt` chứa họ tên và mã sinh viên.
+> - Đọc và hiển thị nội dung tập tin lên Terminal.
+> - Ghi nối thêm tên lớp vào cuối tập tin bằng `appendFile()`.
+> - Đọc lại tập tin để chứng minh nội dung đã được cập nhật.
+> - Chạy: `node bai03.js`
+> - Kết quả: Tập tin được tạo, cập nhật và Terminal hiển thị đầy đủ nội dung sau cập nhật.
 
 ---
 
@@ -22,10 +24,11 @@
 ## 🛠️ Cấu trúc thư mục
 ```
 Bài 03/Node js/Bai03/bt3/
-├── bai03.js         # Mã nguồn sắp xếp sinh viên và xử lý bất đồng bộ
+├── bai03.js         # Mã nguồn thao tác đọc/ghi/nối file với module fs
 ├── package.json     # Cấu hình dự án và npm script
-├── screenshot.png   # Ảnh chụp thực tế kết quả chạy lệnh trong Terminal
-└── README.md        # Hướng dẫn chi tiết cách chạy và mô tả kết quả
+├── thongtin.txt     # Tập tin văn bản được tạo và cập nhật bởi bai03.js
+├── screenshot.png   # Ảnh chụp thực tế kết quả chạy trên máy
+└── README.md        # Hướng dẫn chi tiết cách chạy và mô tả các bước
 ```
 
 ---
@@ -50,26 +53,41 @@ Khi chạy lệnh `node bai03.js`, màn hình terminal xuất ra:
 
 ```text
 ======================================================================
-       BÀI 03 - BÀI TẬP 03 (bt3): SẮP XẾP BẢNG XẾP HẠNG SINH VIÊN     
+       BÀI 03 - BÀI TẬP 03 (bt3): THAO TÁC TẬP TIN VỚI MODULE FS      
 ======================================================================
 👤 Sinh viên thực hiện : Lê Trần Thạnh (MSSV: CD-CNTT18B27)
 🏫 Lớp                 : CĐ-CNTT18B
 ----------------------------------------------------------------------
-⏳ Đang đồng bộ và xử lý dữ liệu sinh viên...
+✅ Bước 1: Đã tạo thành công tập tin "thongtin.txt"!
 
-🏆 BẢNG XẾP HẠNG SINH VIÊN THEO ĐIỂM SỐ (GIẢM DẦN):
-----------------------------------------------------------------------
- Hạng | Mã SV          | Họ và tên            | Tuổi | Điểm
-----------------------------------------------------------------------
-  Top 1 | SV005          | Võ Thảo My           |  19  | 9.2
-  Top 2 | CD-CNTT18B27   | Lê Trần Thạnh        |  20  | 8.5
-  Top 3 | SV003          | Trần Hoàng Long      |  21  | 7
-  Top 4 | SV002          | Nguyễn Thị Thu Hà    |  20  | 4.5
-  Top 5 | SV004          | Phạm Minh Tuấn       |  20  | 3.8
-----------------------------------------------------------------------
-✅ Đã hoàn thành sắp xếp và hiển thị toàn bộ danh sách thành công.
-======================================================================
+📄 Bước 2: Nội dung ban đầu trong file thongtin.txt:
+--------------------------------------------------
+Họ và tên: Lê Trần Thạnh
+Mã sinh viên: CD-CNTT18B27
+--------------------------------------------------
+
+✍️  Bước 3: Đã dùng appendFile() để ghi nối thêm tên lớp thành công!
+
+🎉 Bước 4: Đọc lại file - CHỨNG MINH NỘI DUNG ĐÃ ĐƯỢC CẬP NHẬT:
+==================================================
+Họ và tên: Lê Trần Thạnh
+Mã sinh viên: CD-CNTT18B27
+Lớp: CĐ-CNTT18B
+==================================================
+✨ Hoàn thành tất cả các yêu cầu của Bài tập 03!
 ```
+
+---
+
+## 🔍 Giải thích các bước kỹ thuật trong mã nguồn
+1. **Bước 1 (Ghi file mới):**
+   * Sử dụng hàm `fs.writeFile(filePath, noiDung, 'utf8', callback)` để tạo mới và ghi Họ tên + Mã sinh viên vào file `thongtin.txt`.
+2. **Bước 2 (Đọc file lần 1):**
+   * Sử dụng hàm `fs.readFile(filePath, 'utf8', callback)` để đọc nội dung ban đầu và in ra console.
+3. **Bước 3 (Ghi nối thêm dữ liệu):**
+   * Sử dụng hàm `fs.appendFile(filePath, '\nLớp: CĐ-CNTT18B', 'utf8', callback)` để bổ sung thông tin tên lớp vào cuối file mà không làm mất dữ liệu cũ.
+4. **Bước 4 (Đọc lại để chứng minh):**
+   * Tiếp tục gọi `fs.readFile()` để đọc lại toàn bộ tập tin, chứng minh nội dung tên lớp đã được ghi nối thành công.
 
 ---
 

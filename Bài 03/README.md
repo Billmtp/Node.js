@@ -1,4 +1,4 @@
-# BÀI 03: ES6 & QUẢN LÝ ĐỐI TƯỢNG VỚI NODE.JS
+# BÀI 03: ES6, HTTP WEB SERVER & MODULE FS VỚI NODE.JS
 
 * **Họ và tên:** Lê Trần Thạnh
 * **Mã sinh viên:** CD-CNTT18B27
@@ -17,12 +17,13 @@ Bài 03/
         │   ├── bai01.js
         │   ├── package.json
         │   └── README.md
-        ├── bt2/             # Bài tập 2: Điểm trung bình & xếp loại (bai02.js)
+        ├── bt2/             # Bài tập 2: Web Server HTTP, routing / và /about (bai02.js)
         │   ├── bai02.js
         │   ├── package.json
         │   └── README.md
-        └── bt3/             # Bài tập 3: Sắp xếp bảng xếp hạng (bai03.js)
+        └── bt3/             # Bài tập 3: Ghi, đọc và appendFile với module fs (bai03.js)
             ├── bai03.js
+            ├── thongtin.txt
             ├── package.json
             └── README.md
 ```

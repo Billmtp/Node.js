@@ -1,7 +1,7 @@
 {
   "name": "bai03-bt02",
   "version": "1.0.0",
-  "description": "Bài 03 - Bt02: Thống kê điểm trung bình, xếp loại và tìm sinh viên thủ khoa",
+  "description": "Bài 03 - Bt02: Tạo Web Server với module http, routing / và /about, xử lý 404",
   "main": "bai02.js",
   "scripts": {
     "start": "node bai02.js"

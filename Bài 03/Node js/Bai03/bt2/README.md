@@ -1,11 +1,13 @@
-# BÀI TẬP 03 - BT02: THỐNG KÊ ĐIỂM TRUNG BÌNH & XẾP LOẠI HỌC LỰC
+# BÀI TẬP 03 - BT02: TẠO WEB SERVER VỚI MODULE HTTP
 
-## 📌 Yêu cầu bài tập
-> **Nội dung:**
-> - Tiếp tục phát triển đối tượng `SinhVien` từ Bt01.
-> - Bổ sung phương thức `xepLoai()` đánh giá học lực (Xuất sắc, Giỏi, Khá, Trung bình, Yếu).
-> - Sử dụng hàm mũi tên (Arrow Function) và hàm `.reduce()` để tính điểm trung bình chung của lớp.
-> - Tìm sinh viên có điểm số cao nhất (Thủ khoa) và hiển thị kết quả ra màn hình.
+## 📌 Yêu cầu đề bài
+> **Yêu cầu:** Tạo tập tin `bai02.js` thực hiện:
+> - Sử dụng module `http` tạo Web Server tại cổng `3000`.
+> - Khi truy cập `/`, hiển thị lời chào và mã sinh viên.
+> - Khi truy cập `/about`, hiển thị thông tin giới thiệu bản thân.
+> - Khi truy cập đường dẫn không tồn tại, trả về mã trạng thái HTTP `404`.
+> - Chạy lệnh: `node bai02.js`
+> - Kết quả: Trình duyệt hiển thị đúng nội dung tại `http://localhost:3000` và `http://localhost:3000/about`.
 
 ---
 
@@ -22,10 +24,10 @@
 ## 🛠️ Cấu trúc thư mục
 ```
 Bài 03/Node js/Bai03/bt2/
-├── bai02.js         # Mã nguồn tính toán điểm trung bình và xếp loại sinh viên
+├── bai02.js         # Mã nguồn Web Server HTTP xử lý định tuyến (/) và (/about)
 ├── package.json     # Cấu hình dự án và npm script
-├── screenshot.png   # Ảnh chụp thực tế kết quả chạy lệnh trong Terminal
-└── README.md        # Hướng dẫn chi tiết cách chạy và mô tả kết quả
+├── screenshot.png   # Ảnh chụp thực tế kết quả chạy trên máy
+└── README.md        # Hướng dẫn chi tiết cách chạy và mô tả các bước
 ```
 
 ---
@@ -37,44 +39,34 @@ Bài 03/Node js/Bai03/bt2/
 cd "Bài 03/Node js/Bai03/bt2"
 ```
 
-### Bước 2: Chạy chương trình
+### Bước 2: Khởi chạy máy chủ Web
 ```powershell
 node bai02.js
 ```
 *(Hoặc dùng lệnh `npm start`)*
 
----
-
-## 📊 Kết quả thực thi trong Terminal
-Khi chạy lệnh `node bai02.js`, màn hình terminal xuất ra:
-
+Khi khởi chạy thành công, console sẽ hiển thị:
 ```text
 ======================================================================
-       BÀI 03 - BÀI TẬP 02 (bt2): THỐNG KÊ & XẾP LOẠI SINH VIÊN       
-======================================================================
-👤 Sinh viên thực hiện : Lê Trần Thạnh (MSSV: CD-CNTT18B27)
-🏫 Lớp                 : CĐ-CNTT18B
-----------------------------------------------------------------------
-
-📋 DANH SÁCH SINH VIÊN VÀ XẾP LOẠI HỌC LỰC:
-  1. [CD-CNTT18B27] Lê Trần Thạnh        | Điểm: 8.5 | Xếp loại: Giỏi
-  2. [SV002] Nguyễn Thị Thu Hà    | Điểm: 4.5 | Xếp loại: Yếu
-  3. [SV003] Trần Hoàng Long      | Điểm: 7 | Xếp loại: Khá
-  4. [SV004] Phạm Minh Tuấn       | Điểm: 3.8 | Xếp loại: Yếu
-  5. [SV005] Võ Thảo My           | Điểm: 9.2 | Xếp loại: Xuất sắc
-
-📊 THỐNG KÊ KẾT QUẢ HỌC TẬP:
-----------------------------------------------------------------------
-  👉 Tổng số sinh viên : 5 sinh viên
-  👉 Điểm trung bình   : 6.60 / 10
-  🏆 Sinh viên thủ khoa : Võ Thảo My (SV005) với số điểm 9.2 (Xếp loại: Xuất sắc)
+[Bài 03 - bt2] Web Server đang lắng nghe tại cổng 3000
+👉 Trang chủ       : http://localhost:3000/
+👉 Trang giới thiệu: http://localhost:3000/about
+👉 Sinh viên       : Lê Trần Thạnh - MSSV: CD-CNTT18B27
 ======================================================================
 ```
+
+### Bước 3: Mở trình duyệt web để kiểm tra các đường dẫn
+1. **Truy cập trang chủ:** Mở trình duyệt vào [`http://localhost:3000`](http://localhost:3000)
+   * Hiển thị lời chào và Mã sinh viên: **CD-CNTT18B27**.
+2. **Truy cập trang giới thiệu:** Mở [`http://localhost:3000/about`](http://localhost:3000/about)
+   * Hiển thị đầy đủ thông tin giới thiệu bản thân: Họ tên Lê Trần Thạnh, MSSV, Lớp CĐ-CNTT18B, Trường CĐ Kỹ thuật Công nghệ Nha Trang.
+3. **Kiểm tra đường dẫn không tồn tại (404):** Mở thử [`http://localhost:3000/khong-ton-tai`](http://localhost:3000/khong-ton-tai)
+   * Máy chủ trả về mã HTTP 404 Not Found.
 
 ---
 
 ## 📸 Hình ảnh minh chứng kết quả chạy thực tế
 
-Ảnh chụp màn hình thực tế khi chạy lệnh `node bai02.js` trên máy:
+Ảnh chụp màn hình thực tế khi chạy lệnh `node bai02.js` và truy cập trình duyệt:
 
 ![Minh chứng kết quả chạy Bài 03 - bt2](./screenshot.png)

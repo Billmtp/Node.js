@@ -1,7 +1,7 @@
 {
   "name": "bai03-bt03",
   "version": "1.0.0",
-  "description": "Bài 03 - Bt03: Sắp xếp bảng xếp hạng sinh viên giảm dần và xử lý async/await",
+  "description": "Bài 03 - Bt03: Sử dụng module fs để ghi, đọc, appendFile và đọc lại tập tin thongtin.txt",
   "main": "bai03.js",
   "scripts": {
     "start": "node bai03.js"

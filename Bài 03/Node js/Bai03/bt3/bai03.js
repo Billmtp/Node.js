@@ -1,14 +1,14 @@
 /**
  * BÀI 03 - BÀI TẬP 03 (bt3)
  * 
- * Yêu cầu:
- * - Tiếp tục phát triển danh sách sinh viên.
- * - Sử dụng hàm mũi tên (Arrow Function) kết hợp phương thức `.sort()` để sắp xếp
- *   danh sách sinh viên theo thứ tự điểm số giảm dần (từ cao xuống thấp).
- * - Sử dụng Promise và async/await mô phỏng quá trình tải và xử lý dữ liệu bất đồng bộ.
- * - Hiển thị bảng xếp hạng sinh viên ra màn hình console.
+ * Yêu cầu: Tạo tập tin bai03.js sử dụng module fs:
+ * - Tạo tập tin thongtin.txt chứa họ tên và mã sinh viên.
+ * - Đọc và hiển thị nội dung tập tin lên Terminal.
+ * - Ghi nối thêm tên lớp vào cuối tập tin bằng appendFile().
+ * - Đọc lại tập tin để chứng minh nội dung đã được cập nhật.
  * 
  * Chạy lệnh: node bai03.js
+ * Kết quả: Tập tin được tạo, cập nhật và Terminal hiển thị đầy đủ nội dung sau cập nhật.
  * 
  * Sinh viên thực hiện: Lê Trần Thạnh
  * Mã sinh viên (MSSV): CD-CNTT18B27
@@ -16,60 +16,60 @@
  * Trường: Cao đẳng Kỹ thuật Công nghệ Nha Trang
  */
 
-class SinhVien {
-    constructor(ma, hoTen, tuoi, diem) {
-        this.ma = ma;
-        this.hoTen = hoTen;
-        this.tuoi = tuoi;
-        this.diem = diem;
+const fs = require('fs');
+const path = require('path');
+
+const filePath = path.join(__dirname, 'thongtin.txt');
+
+console.log('======================================================================');
+console.log('       BÀI 03 - BÀI TẬP 03 (bt3): THAO TÁC TẬP TIN VỚI MODULE FS      ');
+console.log('======================================================================');
+console.log('👤 Sinh viên thực hiện : Lê Trần Thạnh (MSSV: CD-CNTT18B27)');
+console.log('🏫 Lớp                 : CĐ-CNTT18B');
+console.log('----------------------------------------------------------------------');
+
+// Bước 1: Tạo tập tin thongtin.txt chứa họ tên và mã sinh viên
+const noiDungBanDau = `Họ và tên: Lê Trần Thạnh\nMã sinh viên: CD-CNTT18B27`;
+
+fs.writeFile(filePath, noiDungBanDau, 'utf8', (err) => {
+    if (err) {
+        console.error('❌ Lỗi khi tạo file:', err.message);
+        return;
     }
-}
+    console.log('✅ Bước 1: Đã tạo thành công tập tin "thongtin.txt"!');
 
-// Khai báo danh sách 5 sinh viên ban đầu
-const danhSachSinhVien = [
-    new SinhVien('CD-CNTT18B27', 'Lê Trần Thạnh', 20, 8.5),
-    new SinhVien('SV002', 'Nguyễn Thị Thu Hà', 20, 4.5),
-    new SinhVien('SV003', 'Trần Hoàng Long', 21, 7.0),
-    new SinhVien('SV004', 'Phạm Minh Tuấn', 20, 3.8),
-    new SinhVien('SV005', 'Võ Thảo My', 19, 9.2)
-];
+    // Bước 2: Đọc và hiển thị nội dung tập tin lên Terminal
+    fs.readFile(filePath, 'utf8', (err, data1) => {
+        if (err) {
+            console.error('❌ Lỗi khi đọc file lần 1:', err.message);
+            return;
+        }
+        console.log('\n📄 Bước 2: Nội dung ban đầu trong file thongtin.txt:');
+        console.log('--------------------------------------------------');
+        console.log(data1);
+        console.log('--------------------------------------------------');
 
-// Hàm mô phỏng xử lý bất đồng bộ tải dữ liệu sinh viên
-const layDanhSachSinhVienAsync = () => {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve([...danhSachSinhVien]);
-        }, 300);
+        // Bước 3: Ghi nối thêm tên lớp vào cuối tập tin bằng appendFile()
+        const noiDungNoiThem = `\nLớp: CĐ-CNTT18B`;
+        fs.appendFile(filePath, noiDungNoiThem, 'utf8', (err) => {
+            if (err) {
+                console.error('❌ Lỗi khi ghi nối file:', err.message);
+                return;
+            }
+            console.log('\n✍️  Bước 3: Đã dùng appendFile() để ghi nối thêm tên lớp thành công!');
+
+            // Bước 4: Đọc lại tập tin để chứng minh nội dung đã được cập nhật
+            fs.readFile(filePath, 'utf8', (err, data2) => {
+                if (err) {
+                    console.error('❌ Lỗi khi đọc file lần 2:', err.message);
+                    return;
+                }
+                console.log('\n🎉 Bước 4: Đọc lại file - CHỨNG MINH NỘI DUNG ĐÃ ĐƯỢC CẬP NHẬT:');
+                console.log('==================================================');
+                console.log(data2);
+                console.log('==================================================');
+                console.log('✨ Hoàn thành tất cả các yêu cầu của Bài tập 03!');
+            });
+        });
     });
-};
-
-async function chayChuongTrinh() {
-    console.log('======================================================================');
-    console.log('       BÀI 03 - BÀI TẬP 03 (bt3): SẮP XẾP BẢNG XẾP HẠNG SINH VIÊN     ');
-    console.log('======================================================================');
-    console.log('👤 Sinh viên thực hiện : Lê Trần Thạnh (MSSV: CD-CNTT18B27)');
-    console.log('🏫 Lớp                 : CĐ-CNTT18B');
-    console.log('----------------------------------------------------------------------');
-    console.log('⏳ Đang đồng bộ và xử lý dữ liệu sinh viên...');
-
-    const danhSach = await layDanhSachSinhVienAsync();
-
-    // Sử dụng hàm mũi tên để sắp xếp danh sách theo điểm giảm dần (b.diem - a.diem)
-    const danhSachSapXep = danhSach.sort((a, b) => b.diem - a.diem);
-
-    console.log('\n🏆 BẢNG XẾP HẠNG SINH VIÊN THEO ĐIỂM SỐ (GIẢM DẦN):');
-    console.log('----------------------------------------------------------------------');
-    console.log(' Hạng | Mã SV          | Họ và tên            | Tuổi | Điểm');
-    console.log('----------------------------------------------------------------------');
-    danhSachSapXep.forEach((sv, index) => {
-        const hang = `Top ${index + 1}`.padEnd(5);
-        const ma = sv.ma.padEnd(14);
-        const ten = sv.hoTen.padEnd(20);
-        console.log(`  ${hang} | ${ma} | ${ten} |  ${sv.tuoi}  | ${sv.diem}`);
-    });
-    console.log('----------------------------------------------------------------------');
-    console.log('✅ Đã hoàn thành sắp xếp và hiển thị toàn bộ danh sách thành công.');
-    console.log('======================================================================');
-}
-
-chayChuongTrinh();
+});

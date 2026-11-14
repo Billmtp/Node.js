@@ -18,69 +18,43 @@
 ```
 Bài 02/01/
 ├── server.js        # Mã nguồn HTTP Server bằng Node.js thuần (module http)
-├── package.json     # File cấu hình và script khởi chạy ứng dụng
-├── screenshot.png   # Ảnh chụp màn hình kết quả chạy thực tế tại localhost:3000
-└── README.md        # Hướng dẫn chi tiết cách chạy code và giải thích
+├── package.json     # File cấu hình và script npm
+├── step1_cd.png     # Ảnh chụp thực tế lệnh cd
+├── step2_run.png    # Ảnh chụp thực tế lệnh node server.js
+├── screenshot.png   # Ảnh chụp thực tế giao diện trình duyệt tại localhost:3000
+└── README.md        # Hướng dẫn chi tiết cách chạy và minh chứng
 ```
 
 ---
 
-## 🚀 Hướng dẫn cách chạy mã nguồn
+## 🚀 Các bước thực hiện & Minh chứng ảnh chụp thực tế từng bước
 
-### 1. Yêu cầu môi trường
-* Đã cài đặt **Node.js** (khuyến nghị phiên bản 18+ hoặc 20+ LTS).
-* Trình duyệt web bất kỳ (Chrome, Edge, Firefox, Brave,...).
-
-### 2. Các bước thực hiện
-
-#### Bước 1: Mở Terminal / PowerShell và di chuyển vào thư mục bài tập
+### Bước 1: Mở PowerShell và di chuyển vào thư mục bài tập
 ```powershell
-cd "Bài 02/01"
+cd "c:\baitap\Bài 02\01"
 ```
-
-#### Bước 2: Khởi động máy chủ HTTP
-Bạn có thể sử dụng 1 trong 2 cách sau:
-
-* **Cách 1 (Sử dụng Node.js trực tiếp):**
-  ```powershell
-  node server.js
-  ```
-
-* **Cách 2 (Sử dụng script npm):**
-  ```powershell
-  npm start
-  ```
-
-Khi khởi động thành công, màn hình console sẽ hiển thị thông báo:
-```text
-====================================================
-[Bài 02 - Phần 01] HTTP Server đang chạy thành công!
-Truy cập máy chủ tại: http://localhost:3000
-Sinh viên: Lê Trần Thạnh
-====================================================
-```
-
-#### Bước 3: Mở trình duyệt web để kiểm tra kết quả
-* Mở trình duyệt và truy cập vào đường dẫn:
-  ```
-  http://localhost:3000
-  ```
-* Trang web sẽ hiển thị thông tin tên sinh viên **Lê Trần Thạnh** cùng thông số máy chủ HTTP.
+![Bước 1: Lệnh chuyển thư mục cd](./step1_cd.png)
 
 ---
 
-## 📸 Hình ảnh minh chứng thực tế (Ảnh chụp thật khi chạy localhost:3000)
+### Bước 2: Khởi động máy chủ HTTP
+```powershell
+node server.js
+```
+*(Hoặc dùng lệnh `npm start`)*
 
-### 1. Khởi chạy máy chủ trên Terminal / PowerShell
-![Khởi chạy server Bài 02 - Phần 01](./terminal.png)
+![Bước 2: Lệnh chạy node server.js](./step2_run.png)
 
-### 2. Kết quả hiển thị trên trình duyệt (localhost:3000)
-![Minh chứng kết quả chạy Bài 02 - Phần 01](./screenshot.png)
+---
+
+### Bước 3: Mở trình duyệt web kiểm tra kết quả
+Truy cập địa chỉ: [http://localhost:3000](http://localhost:3000)
+
+![Bước 3: Kết quả hiển thị trên trình duyệt](./screenshot.png)
 
 ---
 
 ## 🔍 Giải thích mã nguồn (`server.js`)
-* **Khởi tạo module:** `const http = require('http');` — Sử dụng module `http` tích hợp sẵn trong Node.js (không phụ thuộc vào thư viện ngoài như Express, Koa).
-* **Thiết lập Header:** `res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });` — Đảm bảo máy khách nhận diện trang là định dạng HTML và mã hóa tiếng Việt có dấu chuẩn UTF-8.
-* **Giao diện HTML:** Được thiết kế hiện đại, tương thích tốt trên cả máy tính lẫn thiết bị di động, hiển thị rõ ràng thông tin sinh viên và trạng thái hoạt động của máy chủ.
-* **Lắng nghe cổng:** `server.listen(3000, 'localhost', ...)` — Kích hoạt server lắng nghe kết nối tại cổng 3000.
+* **Module http tích hợp:** `const http = require('http');` — Sử dụng module có sẵn trong Node.js, không cần thư viện ngoài.
+* **Thiết lập Header UTF-8:** `res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });` — Trả về định dạng HTML và hiển thị đúng tiếng Việt có dấu.
+* **Lắng nghe cổng:** `server.listen(3000, 'localhost', ...)` — Kích hoạt server lắng nghe tại cổng 3000.

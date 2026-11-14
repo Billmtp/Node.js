@@ -6,7 +6,7 @@
 > - Sử dụng class, constructor để biểu diễn sinh viên.
 > - Sử dụng hàm mũi tên (arrow function) để lọc sinh viên có điểm từ 5 trở lên.
 > - Hiển thị danh sách sinh viên đạt yêu cầu bằng `console.log()`.
-> - Chạy lệnh: `node bai01.js`
+> - Chạy: `node bai01.js`
 > - Kết quả: Terminal hiển thị đúng danh sách sinh viên đạt yêu cầu.
 
 ---
@@ -26,36 +26,38 @@
 Bài 03/Node js/Bai03/bt1/
 ├── bai01.js         # Mã nguồn thực thi quản lý và lọc sinh viên
 ├── package.json     # Cấu hình dự án và script npm
-├── screenshot.png   # Ảnh chụp thực tế kết quả chạy lệnh trong Terminal
+├── step1_cd.png     # Ảnh chụp thực tế lệnh di chuyển thư mục cd
+├── step2_run.png    # Ảnh chụp thực tế lệnh chạy node bai01.js và kết quả
 └── README.md        # Hướng dẫn chi tiết, mô tả mã nguồn và kết quả
 ```
 
 ---
 
-## 🚀 Hướng dẫn các bước chạy code
+## 🚀 Các bước thực hiện & Ảnh minh chứng thực tế 100%
 
 ### Bước 1: Mở Terminal / PowerShell và chuyển vào thư mục bài tập
 ```powershell
 cd "Bài 03/Node js/Bai03/bt1"
 ```
+📸 **Ảnh chụp màn hình thực tế lệnh `cd`:**
 
-### Bước 2: Chạy chương trình
-Bạn có thể dùng 1 trong 2 lệnh sau:
-
-* **Cách 1: Dùng lệnh Node trực tiếp:**
-  ```powershell
-  node bai01.js
-  ```
-* **Cách 2: Dùng script npm:**
-  ```powershell
-  npm start
-  ```
+![Bước 1: Lệnh chuyển thư mục cd](./step1_cd.png)
 
 ---
 
-## 📊 Kết quả thực thi trong Terminal
-Khi chạy lệnh `node bai01.js`, màn hình terminal xuất ra:
+### Bước 2: Chạy chương trình và hiển thị kết quả
+```powershell
+node bai01.js
+```
+*(Hoặc dùng lệnh `npm start`)*
 
+📸 **Ảnh chụp màn hình thực tế khi chạy lệnh và kết quả Terminal:**
+
+![Bước 2: Chạy lệnh node bai01.js và kết quả](./step2_run.png)
+
+---
+
+## 📊 Kết quả thực thi chi tiết trong Terminal
 ```text
 ======================================================================
                  BÀI 03 - BÀI TẬP 01 (bt1): QUẢN LÝ SINH VIÊN        
@@ -95,24 +97,9 @@ Khi chạy lệnh `node bai01.js`, màn hình terminal xuất ra:
        }
    }
    ```
-   * Giúp đóng gói thông tin sinh viên theo hướng đối tượng (OOP) chuẩn ES6.
-
-2. **Khai báo danh sách 5 sinh viên:**
-   * Sử dụng mảng (`Array`) chứa 5 đối tượng khởi tạo qua `new SinhVien(...)`.
-
-3. **Lọc sinh viên bằng Arrow Function:**
+2. **Khai báo danh sách 5 sinh viên:** Mảng gồm 5 đối tượng khởi tạo từ class `SinhVien`.
+3. **Lọc bằng Arrow Function:**
    ```javascript
    const sinhVienDatYeuCau = danhSachSinhVien.filter(sv => sv.diem >= 5);
    ```
-   * Hàm mũi tên `sv => sv.diem >= 5` làm callback cho phương thức `.filter()`, giữ lại các phần tử có thuộc tính `diem` từ 5 trở lên.
-
-4. **Hiển thị danh sách bằng `console.log()`:**
-   * Sử dụng vòng lặp duyệt mảng và in định dạng bảng đẹp mắt ra console.
-
----
-
-## 📸 Hình ảnh minh chứng kết quả chạy thực tế
-
-Ảnh chụp màn hình thực tế khi chạy lệnh `node bai01.js` trên máy:
-
-![Minh chứng kết quả chạy Bài 03 - bt1](./screenshot.png)
+4. **Hiển thị danh sách đạt yêu cầu:** Dùng `console.log()` duyệt in ra màn hình.

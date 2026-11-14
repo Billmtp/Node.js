@@ -27,20 +27,26 @@ Bài 03/Node js/Bai03/bt3/
 ├── bai03.js         # Mã nguồn thao tác đọc/ghi/nối file với module fs
 ├── package.json     # Cấu hình dự án và npm script
 ├── thongtin.txt     # Tập tin văn bản được tạo và cập nhật bởi bai03.js
-├── screenshot.png   # Ảnh chụp thực tế kết quả chạy trên máy
+├── step1_cd.png     # Ảnh chụp thực tế lệnh di chuyển thư mục cd
+├── screenshot.png   # Ảnh chụp thực tế kết quả chạy trên Terminal
 └── README.md        # Hướng dẫn chi tiết cách chạy và mô tả các bước
 ```
 
 ---
 
-## 🚀 Hướng dẫn các bước chạy code
+## 🚀 Các bước thực hiện & Ảnh minh chứng thực tế 100%
 
 ### Bước 1: Mở Terminal / PowerShell và chuyển vào thư mục bài tập
 ```powershell
 cd "Bài 03/Node js/Bai03/bt3"
 ```
+📸 **Ảnh chụp màn hình thực tế lệnh `cd`:**
 
-### Bước 2: Chạy chương trình
+![Bước 1: Lệnh chuyển thư mục cd](./step1_cd.png)
+
+---
+
+### Bước 2: Chạy chương trình thao tác với file
 ```powershell
 node bai03.js
 ```
@@ -48,8 +54,8 @@ node bai03.js
 
 ---
 
-## 📊 Kết quả thực thi trong Terminal
-Khi chạy lệnh `node bai03.js`, màn hình terminal xuất ra:
+## 📊 Kết quả thực thi chi tiết trong Terminal
+Khi chạy lệnh `node bai03.js`, màn hình xuất ra đầy đủ các bước xử lý file:
 
 ```text
 ======================================================================
@@ -76,18 +82,6 @@ Lớp: CĐ-CNTT18B
 ==================================================
 ✨ Hoàn thành tất cả các yêu cầu của Bài tập 03!
 ```
-
----
-
-## 🔍 Giải thích các bước kỹ thuật trong mã nguồn
-1. **Bước 1 (Ghi file mới):**
-   * Sử dụng hàm `fs.writeFile(filePath, noiDung, 'utf8', callback)` để tạo mới và ghi Họ tên + Mã sinh viên vào file `thongtin.txt`.
-2. **Bước 2 (Đọc file lần 1):**
-   * Sử dụng hàm `fs.readFile(filePath, 'utf8', callback)` để đọc nội dung ban đầu và in ra console.
-3. **Bước 3 (Ghi nối thêm dữ liệu):**
-   * Sử dụng hàm `fs.appendFile(filePath, '\nLớp: CĐ-CNTT18B', 'utf8', callback)` để bổ sung thông tin tên lớp vào cuối file mà không làm mất dữ liệu cũ.
-4. **Bước 4 (Đọc lại để chứng minh):**
-   * Tiếp tục gọi `fs.readFile()` để đọc lại toàn bộ tập tin, chứng minh nội dung tên lớp đã được ghi nối thành công.
 
 ---
 

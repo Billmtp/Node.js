@@ -58,34 +58,4 @@ node bai03.js
 
 ---
 
-## 📊 Kết quả thực thi chi tiết trong Terminal
-Khi chạy lệnh `node bai03.js`, màn hình xuất ra đầy đủ các bước xử lý file:
-
-```text
-======================================================================
-       BÀI 03 - BÀI TẬP 03 (bt3): THAO TÁC TẬP TIN VỚI MODULE FS      
-======================================================================
-👤 Sinh viên thực hiện : Lê Trần Thạnh (MSSV: CD-CNTT18B27)
-🏫 Lớp                 : CĐ-CNTT18B
-----------------------------------------------------------------------
-✅ Bước 1: Đã tạo thành công tập tin "thongtin.txt"!
-
-📄 Bước 2: Nội dung ban đầu trong file thongtin.txt:
---------------------------------------------------
-Họ và tên: Lê Trần Thạnh
-Mã sinh viên: CD-CNTT18B27
---------------------------------------------------
-
-✍️  Bước 3: Đã dùng appendFile() để ghi nối thêm tên lớp thành công!
-
-🎉 Bước 4: Đọc lại file - CHỨNG MINH NỘI DUNG ĐÃ ĐƯỢC CẬP NHẬT:
-==================================================
-Họ và tên: Lê Trần Thạnh
-Mã sinh viên: CD-CNTT18B27
-Lớp: CĐ-CNTT18B
-==================================================
-✨ Hoàn thành tất cả các yêu cầu của Bài tập 03!
-```
-
----
 

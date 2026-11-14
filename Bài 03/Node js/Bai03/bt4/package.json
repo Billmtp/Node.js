@@ -1,0 +1,14 @@
+{
+  "name": "bai03-bt04",
+  "version": "1.0.0",
+  "description": "Bài 03 - Bt04: Kết nối MongoDB, sử dụng database qlsinhvien, thêm bằng insertMany() và hiển thị bằng find()",
+  "main": "bai04.js",
+  "scripts": {
+    "start": "node bai04.js"
+  },
+  "dependencies": {
+    "mongodb": "^6.10.0"
+  },
+  "author": "Lê Trần Thạnh - CD-CNTT18B27",
+  "license": "ISC"
+}

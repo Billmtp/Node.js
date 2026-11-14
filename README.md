@@ -23,8 +23,10 @@ GitHub: [https://github.com/Billmtp/Node.js](https://github.com/Billmtp/Node.js)
 
 ---
 
-### [Bài 03: ES6 & Quản lý đối tượng với Node.js](./Bài%2003/)
-* **Cấu trúc:** `Bài 03/Node js/Bai03/bt1, bt2, bt3`
+### [Bài 03: ES6, HTTP Server, Module FS & MongoDB](./Bài%2003/)
+* **Cấu trúc:** `Bài 03/Node js/Bai03/bt1, bt2, bt3, bt4, bt5`
 * **[bt1](./Bài%2003/Node%20js/Bai03/bt1/):** Quản lý đối tượng SinhVien bằng Class/Constructor, lọc danh sách sinh viên có điểm >= 5 bằng Arrow Function (`bai01.js`).
-* **[bt2](./Bài%2003/Node%20js/Bai03/bt2/):** Thống kê điểm trung bình, xếp loại học lực và tìm thủ khoa (`bai02.js`).
-* **[bt3](./Bài%2003/Node%20js/Bai03/bt3/):** Sắp xếp bảng xếp hạng sinh viên giảm dần và xử lý bất đồng bộ (`bai03.js`).
+* **[bt2](./Bài%2003/Node%20js/Bai03/bt2/):** Web Server tại cổng 3000 với module `http`, định tuyến `/`, `/about` và xử lý 404 (`bai02.js`).
+* **[bt3](./Bài%2003/Node%20js/Bai03/bt3/):** Thao tác tập tin với module `fs`: tạo `thongtin.txt`, đọc dữ liệu, nối lớp bằng `appendFile()` (`bai03.js`).
+* **[bt4](./Bài%2003/Node%20js/Bai03/bt4/):** Kết nối MongoDB database `qlsinhvien`, collection `students`, thêm sinh viên bằng `insertMany()` và hiển thị bằng `find()` (`bai04.js`).
+* **[bt5](./Bài%2003/Node%20js/Bai03/bt5/):** Truy vấn lọc sinh viên điểm >= 7 bằng `$gte`, sắp xếp giảm dần với `sort()`, cập nhật điểm bằng `updateOne()` và `$set` (`bai05.js`).

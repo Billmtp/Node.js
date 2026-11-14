@@ -1,0 +1,14 @@
+{
+  "name": "bai03-bt05",
+  "version": "1.0.0",
+  "description": "Bài 03 - Bt05: Truy vấn với $gte, sắp xếp với sort() và cập nhật điểm với updateOne() & $set trong MongoDB",
+  "main": "bai05.js",
+  "scripts": {
+    "start": "node bai05.js"
+  },
+  "dependencies": {
+    "mongodb": "^6.10.0"
+  },
+  "author": "Lê Trần Thạnh - CD-CNTT18B27",
+  "license": "ISC"
+}

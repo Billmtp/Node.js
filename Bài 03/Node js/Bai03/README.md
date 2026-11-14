@@ -1,4 +1,4 @@
-# BÀI 03: ES6, HTTP WEB SERVER & MODULE FS TRONG NODE.JS
+# BÀI 03: ES6, HTTP WEB SERVER, MODULE FS & MONGODB TRONG NODE.JS
 
 * **Họ và tên:** Lê Trần Thạnh
 * **MSSV:** CD-CNTT18B27
@@ -24,3 +24,13 @@
 * **File:** [`bt3/bai03.js`](./bt3/bai03.js)
 * **Yêu cầu:** Tạo file `thongtin.txt` ghi Họ tên và MSSV, đọc hiển thị Terminal, ghi nối tên lớp bằng `appendFile()`, đọc lại chứng minh cập nhật.
 * **Chi tiết & Minh chứng:** Xem tại [`bt3/README.md`](./bt3/README.md)
+
+### [4. Bài tập 04 (bt4): Kết nối MongoDB, Thêm và Hiển thị Dữ liệu](./bt4/)
+* **File:** [`bt4/bai04.js`](./bt4/bai04.js)
+* **Yêu cầu:** Kết nối MongoDB database `qlsinhvien`, collection `students`, thêm ít nhất 3 sinh viên bằng `insertMany()`, hiển thị bằng `find()`.
+* **Chi tiết & Minh chứng:** Xem tại [`bt4/README.md`](./bt4/README.md)
+
+### [5. Bài tập 05 (bt5): Lọc ($gte), Sắp xếp (sort) và Cập nhật ($set) MongoDB](./bt5/)
+* **File:** [`bt5/bai05.js`](./bt5/bai05.js)
+* **Yêu cầu:** Lọc sinh viên có `diem >= 7` bằng `$gte`, sắp xếp giảm dần với `sort()`, cập nhật điểm bằng `updateOne()` & `$set`, hiển thị lại kiểm tra.
+* **Chi tiết & Minh chứng:** Xem tại [`bt5/README.md`](./bt5/README.md)

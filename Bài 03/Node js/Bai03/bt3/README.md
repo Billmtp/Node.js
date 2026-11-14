@@ -89,8 +89,3 @@ Lớp: CĐ-CNTT18B
 
 ---
 
-## 📸 Hình ảnh minh chứng kết quả chạy thực tế
-
-Ảnh chụp màn hình thực tế khi chạy lệnh `node bai03.js` trên máy:
-
-![Minh chứng kết quả chạy Bài 03 - bt3](./screenshot.png)

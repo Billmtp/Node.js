@@ -1,0 +1,11 @@
+{
+  "name": "bai03-bt08",
+  "version": "1.0.0",
+  "description": "Bài 03 - Bt08: Quản lý thư mục và tập tin với module fs (mkdir, rename, unlink)",
+  "main": "bai08.js",
+  "scripts": {
+    "start": "node bai08.js"
+  },
+  "author": "Lê Trần Thạnh - CD-CNTT18B27",
+  "license": "ISC"
+}

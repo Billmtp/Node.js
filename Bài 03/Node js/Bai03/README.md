@@ -44,3 +44,18 @@
 * **File:** [`bt7/bai07.js`](./bt7/bai07.js)
 * **Yêu cầu:** Tạo Web Server cổng 3001, dùng module `http` và `URL`. Xử lý `/hello?name=Minh` (Xin chào Minh), `/sum?a=10&b=20` (Tổng = 30), thông báo lỗi nếu thiếu hoặc sai tham số.
 * **Chi tiết & Minh chứng:** Xem tại [`bt7/README.md`](./bt7/README.md)
+
+### [8. Bài tập 08 (bt8): Quản lý Thư mục & Tập tin với Module FS](./bt8/)
+* **File:** [`bt8/bai08.js`](./bt8/bai08.js)
+* **Yêu cầu:** Tạo thư mục `data`, ghi 3 dòng vào `ghichu.txt`, đổi tên thành `ghichu_moi.txt`, đọc hiển thị lại, tạo và xóa tập tin tạm `tam.txt`.
+* **Chi tiết & Minh chứng:** Xem tại [`bt8/README.md`](./bt8/README.md)
+
+### [9. Bài tập 09 (bt9): Xóa Dữ liệu với deleteOne & deleteMany trong MongoDB](./bt9/)
+* **File:** [`bt9/bai09.js`](./bt9/bai09.js)
+* **Yêu cầu:** Kết nối database `qlsinhvien`, collection riêng `students_test`, thêm ít nhất 5 sinh viên mẫu, xóa 1 sinh viên bằng `deleteOne()`, xóa sinh viên điểm < 5 bằng `deleteMany()`, hiển thị danh sách còn lại bằng `find()`.
+* **Chi tiết & Minh chứng:** Xem tại [`bt9/README.md`](./bt9/README.md)
+
+### [10. Bài tập 10 (bt10): Liên kết Bảng với aggregate() & $lookup trong MongoDB](./bt10/)
+* **File:** [`bt10/bai10.js`](./bt10/bai10.js)
+* **Yêu cầu:** Tạo 2 collection `departments` và `students_join`, sử dụng pipeline `aggregate()` kết hợp `$lookup` để liên kết thông qua `makhoa`, hiển thị tên khoa đầy đủ kèm sinh viên.
+* **Chi tiết & Minh chứng:** Xem tại [`bt10/README.md`](./bt10/README.md)

@@ -1,0 +1,14 @@
+{
+  "name": "bai03-bt09",
+  "version": "1.0.0",
+  "description": "Bài 03 - Bt09: Xóa dữ liệu MongoDB với deleteOne và deleteMany trên collection students_test",
+  "main": "bai09.js",
+  "scripts": {
+    "start": "node bai09.js"
+  },
+  "dependencies": {
+    "mongodb": "^6.10.0"
+  },
+  "author": "Lê Trần Thạnh - CD-CNTT18B27",
+  "license": "ISC"
+}

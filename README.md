@@ -24,7 +24,7 @@ GitHub: [https://github.com/Billmtp/Node.js](https://github.com/Billmtp/Node.js)
 ---
 
 ### [Bài 03: ES6, HTTP Server, Module FS & MongoDB](./Bài%2003/)
-* **Cấu trúc:** `Bài 03/Node js/Bai03/bt1, bt2, bt3, bt4, bt5, bt6, bt7`
+* **Cấu trúc:** `Bài 03/Node js/Bai03/bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9, bt10`
 * **[bt1](./Bài%2003/Node%20js/Bai03/bt1/):** Quản lý đối tượng SinhVien bằng Class/Constructor, lọc danh sách sinh viên có điểm >= 5 bằng Arrow Function (`bai01.js`).
 * **[bt2](./Bài%2003/Node%20js/Bai03/bt2/):** Web Server tại cổng 3000 với module `http`, định tuyến `/`, `/about` và xử lý 404 (`bai02.js`).
 * **[bt3](./Bài%2003/Node%20js/Bai03/bt3/):** Thao tác tập tin với module `fs`: tạo `thongtin.txt`, đọc dữ liệu, nối lớp bằng `appendFile()` (`bai03.js`).
@@ -32,3 +32,6 @@ GitHub: [https://github.com/Billmtp/Node.js](https://github.com/Billmtp/Node.js)
 * **[bt5](./Bài%2003/Node%20js/Bai03/bt5/):** Truy vấn lọc sinh viên điểm >= 7 bằng `$gte`, sắp xếp giảm dần với `sort()`, cập nhật điểm bằng `updateOne()` và `$set` (`bai05.js`).
 * **[bt6](./Bài%2003/Node%20js/Bai03/bt6/):** Module hóa với `xulyDiem.js`, tính điểm trung bình 3 môn và xếp loại học tập bằng `module.exports` và `require()` (`bai06.js`).
 * **[bt7](./Bài%2003/Node%20js/Bai03/bt7/):** Web Server tại cổng 3001 với module `http` và `URL`, xử lý tuyến đường `/hello` và `/sum` với tham số truy vấn (`bai07.js`).
+* **[bt8](./Bài%2003/Node%20js/Bai03/bt8/):** Quản lý thư mục `data`, ghi nội dung, đổi tên tập tin bằng `fs.rename()` và xóa file tạm bằng `fs.unlink()` (`bai08.js`).
+* **[bt9](./Bài%2003/Node%20js/Bai03/bt9/):** Thao tác xóa dữ liệu MongoDB với `deleteOne()` theo mã và `deleteMany()` lọc điểm dưới 5 trên `students_test` (`bai09.js`).
+* **[bt10](./Bài%2003/Node%20js/Bai03/bt10/):** Liên kết dữ liệu giữa collection `departments` và `students_join` bằng `aggregate()` và `$lookup` qua `makhoa` (`bai10.js`).

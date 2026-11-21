@@ -1,0 +1,14 @@
+{
+  "name": "bai03-bt10",
+  "version": "1.0.0",
+  "description": "Bài 03 - Bt10: Liên kết collection departments và students_join bằng aggregate và $lookup",
+  "main": "bai10.js",
+  "scripts": {
+    "start": "node bai10.js"
+  },
+  "dependencies": {
+    "mongodb": "^6.10.0"
+  },
+  "author": "Lê Trần Thạnh - CD-CNTT18B27",
+  "license": "ISC"
+}

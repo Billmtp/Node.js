@@ -39,8 +39,20 @@ Bài 03/
         │   ├── bai06.js
         │   ├── package.json
         │   └── README.md
-        └── bt7/             # Bài tập 7: Web Server HTTP & URL xử lý /hello và /sum (bai07.js)
-            ├── bai07.js
+        ├── bt7/             # Bài tập 7: Web Server HTTP & URL xử lý /hello và /sum (bai07.js)
+        │   ├── bai07.js
+        │   ├── package.json
+        │   └── README.md
+        ├── bt8/             # Bài tập 8: Quản lý thư mục data, đổi tên ghichu và xóa file tam (bai08.js)
+        │   ├── bai08.js
+        │   ├── package.json
+        │   └── README.md
+        ├── bt9/             # Bài tập 9: Xóa dữ liệu MongoDB với deleteOne và deleteMany (bai09.js)
+        │   ├── bai09.js
+        │   ├── package.json
+        │   └── README.md
+        └── bt10/            # Bài tập 10: Liên kết collection departments & students_join bằng $lookup (bai10.js)
+            ├── bai10.js
             ├── package.json
             └── README.md
 ```

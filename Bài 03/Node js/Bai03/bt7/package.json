@@ -1,0 +1,11 @@
+{
+  "name": "bai03-bt07",
+  "version": "1.0.0",
+  "description": "Bài 03 - Bt07: Web Server với module http và URL tại cổng 3001, xử lý /hello và /sum",
+  "main": "bai07.js",
+  "scripts": {
+    "start": "node bai07.js"
+  },
+  "author": "Lê Trần Thạnh - CD-CNTT18B27",
+  "license": "ISC"
+}

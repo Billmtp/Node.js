@@ -34,3 +34,13 @@
 * **File:** [`bt5/bai05.js`](./bt5/bai05.js)
 * **Yêu cầu:** Lọc sinh viên có `diem >= 7` bằng `$gte`, sắp xếp giảm dần với `sort()`, cập nhật điểm bằng `updateOne()` & `$set`, hiển thị lại kiểm tra.
 * **Chi tiết & Minh chứng:** Xem tại [`bt5/README.md`](./bt5/README.md)
+
+### [6. Bài tập 06 (bt6): Module Hóa với module.exports & require()](./bt6/)
+* **File:** [`bt6/xulyDiem.js`](./bt6/xulyDiem.js), [`bt6/bai06.js`](./bt6/bai06.js)
+* **Yêu cầu:** Xây dựng module `xulyDiem.js` tính điểm trung bình 3 môn và xếp loại (Giỏi, Khá, Trung bình, Yếu), xuất bằng `module.exports`, `bai06.js` require và hiển thị dữ liệu 3 sinh viên.
+* **Chi tiết & Minh chứng:** Xem tại [`bt6/README.md`](./bt6/README.md)
+
+### [7. Bài tập 07 (bt7): Web Server với Module HTTP và Đối tượng URL](./bt7/)
+* **File:** [`bt7/bai07.js`](./bt7/bai07.js)
+* **Yêu cầu:** Tạo Web Server cổng 3001, dùng module `http` và `URL`. Xử lý `/hello?name=Minh` (Xin chào Minh), `/sum?a=10&b=20` (Tổng = 30), thông báo lỗi nếu thiếu hoặc sai tham số.
+* **Chi tiết & Minh chứng:** Xem tại [`bt7/README.md`](./bt7/README.md)

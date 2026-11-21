@@ -1,0 +1,11 @@
+{
+  "name": "bai03-bt06",
+  "version": "1.0.0",
+  "description": "Bài 03 - Bt06: Module hóa với xulyDiem.js, tính điểm trung bình 3 môn và xếp loại học tập",
+  "main": "bai06.js",
+  "scripts": {
+    "start": "node bai06.js"
+  },
+  "author": "Lê Trần Thạnh - CD-CNTT18B27",
+  "license": "ISC"
+}

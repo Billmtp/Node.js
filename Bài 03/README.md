@@ -30,8 +30,17 @@ Bài 03/
         │   ├── bai04.js
         │   ├── package.json
         │   └── README.md
-        └── bt5/             # Bài tập 5: Truy vấn $gte >= 7, sort giảm dần, updateOne $set (bai05.js)
-            ├── bai05.js
+        ├── bt5/             # Bài tập 5: Truy vấn $gte >= 7, sort giảm dần, updateOne $set (bai05.js)
+        │   ├── bai05.js
+        │   ├── package.json
+        │   └── README.md
+        ├── bt6/             # Bài tập 6: Module hóa xulyDiem.js, tính ĐTB 3 môn & xếp loại (bai06.js)
+        │   ├── xulyDiem.js
+        │   ├── bai06.js
+        │   ├── package.json
+        │   └── README.md
+        └── bt7/             # Bài tập 7: Web Server HTTP & URL xử lý /hello và /sum (bai07.js)
+            ├── bai07.js
             ├── package.json
             └── README.md
 ```

@@ -1,0 +1,14 @@
+{
+  "name": "bai04-bt01-website-ca-nhan",
+  "version": "1.0.0",
+  "description": "Bài 04 - Bt01: Xây dựng website giới thiệu cá nhân bằng Node.js và Express Framework",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "author": "Lê Trần Thạnh - CD-CNTT18B27",
+  "license": "ISC"
+}

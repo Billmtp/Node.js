@@ -1,37 +1,39 @@
-# KHO LƯU TRỮ BÀI TẬP NODE.JS (NODE.JS REPOSITORY)
+# KHO LƯU TRỮ BÀI TẬP NODE.JS — PHÁT TRIỂN ỨNG DỤNG HƯỚNG MÁY CHỦ
 
-Sinh viên: **Lê Trần Thạnh**  
-Mã sinh viên: **CD-CNTT18B27**  
-Lớp: **CĐ-CNTT18B**  
-Trường: **Cao đẳng Kỹ thuật Công nghệ Nha Trang**  
-GitHub: [https://github.com/Billmtp/Node.js](https://github.com/Billmtp/Node.js)
-
----
-
-## 📚 Danh sách các bài tập
-
-### [Bài 01: Cài đặt Node.js LTS & Chương trình hello.js](./Bài%2001/)
-* **Yêu cầu:** Cài Node.js LTS; chạy `node -v` và `npm -v`; tạo một file `hello.js` và mô tả kết quả.
-* **Mã nguồn:** [`Bài 01/hello.js`](./Bài%2001/hello.js)
-* **Tài liệu & Minh chứng:** [`Bài 01/README.md`](./Bài%2001/README.md)
+* **Sinh viên:** Lê Trần Thạnh
+* **Mã sinh viên (MSSV):** CD-CNTT18B27
+* **Lớp:** CĐ-CNTT18B
+* **Trường:** Trường Cao đẳng Kỹ thuật Công nghệ Nha Trang
+* **GitHub:** [https://github.com/Billmtp/Node.js](https://github.com/Billmtp/Node.js)
 
 ---
 
-### [Bài 02: Lập trình HTTP Server với Node.js](./Bài%2002/)
-* **[Bài 02 - Phần 01](./Bài%2002/01/):** Tạo HTTP server bằng Node.js thuần; truy cập `localhost:3000` và trả về trang HTML chứa tên sinh viên.
-* **[Bài 02 - Phần 02](./Bài%2002/02/):** Tạo ứng dụng Node.js sử dụng module `http`, chạy tại cổng 3000, trả về trang HTML có họ tên và mã sinh viên.
+## 📚 Danh sách bài tập theo cấu trúc EduLab
+
+### [Bài 01 - Tổng quan Node.js và MongoDB](./Bài%2001%20-%20Tổng%20quan%20Node.js%20và%20MongoDB/)
+* **Nhiệm vụ:** Kiểm tra môi trường Node.js (`hello.js`) — [`README.md`](./Bài%2001%20-%20Tổng%20quan%20Node.js%20và%20MongoDB/README.md)
 
 ---
 
-### [Bài 03: ES6, HTTP Server, Module FS & MongoDB](./Bài%2003/)
-* **Cấu trúc:** `Bài 03/Node js/Bai03/bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9, bt10`
-* **[bt1](./Bài%2003/Node%20js/Bai03/bt1/):** Quản lý đối tượng SinhVien bằng Class/Constructor, lọc danh sách sinh viên có điểm >= 5 bằng Arrow Function (`bai01.js`).
-* **[bt2](./Bài%2003/Node%20js/Bai03/bt2/):** Web Server tại cổng 3000 với module `http`, định tuyến `/`, `/about` và xử lý 404 (`bai02.js`).
-* **[bt3](./Bài%2003/Node%20js/Bai03/bt3/):** Thao tác tập tin với module `fs`: tạo `thongtin.txt`, đọc dữ liệu, nối lớp bằng `appendFile()` (`bai03.js`).
-* **[bt4](./Bài%2003/Node%20js/Bai03/bt4/):** Kết nối MongoDB database `qlsinhvien`, collection `students`, thêm sinh viên bằng `insertMany()` và hiển thị bằng `find()` (`bai04.js`).
-* **[bt5](./Bài%2003/Node%20js/Bai03/bt5/):** Truy vấn lọc sinh viên điểm >= 7 bằng `$gte`, sắp xếp giảm dần với `sort()`, cập nhật điểm bằng `updateOne()` và `$set` (`bai05.js`).
-* **[bt6](./Bài%2003/Node%20js/Bai03/bt6/):** Module hóa với `xulyDiem.js`, tính điểm trung bình 3 môn và xếp loại học tập bằng `module.exports` và `require()` (`bai06.js`).
-* **[bt7](./Bài%2003/Node%20js/Bai03/bt7/):** Web Server tại cổng 3001 với module `http` và `URL`, xử lý tuyến đường `/hello` và `/sum` với tham số truy vấn (`bai07.js`).
-* **[bt8](./Bài%2003/Node%20js/Bai03/bt8/):** Quản lý thư mục `data`, ghi nội dung, đổi tên tập tin bằng `fs.rename()` và xóa file tạm bằng `fs.unlink()` (`bai08.js`).
-* **[bt9](./Bài%2003/Node%20js/Bai03/bt9/):** Thao tác xóa dữ liệu MongoDB với `deleteOne()` theo mã và `deleteMany()` lọc điểm dưới 5 trên `students_test` (`bai09.js`).
-* **[bt10](./Bài%2003/Node%20js/Bai03/bt10/):** Liên kết dữ liệu giữa collection `departments` và `students_join` bằng `aggregate()` và `$lookup` qua `makhoa` (`bai10.js`).
+### [Bài 02 - Ứng dụng Node.js đầu tiên](./Bài%2002%20-%20Ứng%20dụng%20Node.js%20đầu%20tiên/)
+* **[01](./Bài%2002%20-%20Ứng%20dụng%20Node.js%20đầu%20tiên/01/):** HTTP Server đầu tiên (`server.js`)
+* **[02](./Bài%2002%20-%20Ứng%20dụng%20Node.js%20đầu%20tiên/02/):** Thực hành HTTP Server — Kiểm thử GĐ2 (`server.js`)
+
+---
+
+### [Bài 03 - Module, File System và cơ sở dữ liệu](./Bài%2003%20-%20Module,%20File%20System%20và%20cơ%20sở%20dữ%20liệu/)
+* **[bt1](./Bài%2003%20-%20Module,%20File%20System%20và%20cơ%20sở%20dữ%20liệu/bt1/):** Bài 1. Quản lý thông tin sinh viên bằng JavaScript ES6 (`bai01.js`)
+* **[bt2](./Bài%2003%20-%20Module,%20File%20System%20và%20cơ%20sở%20dữ%20liệu/bt2/):** Bài 2. Tạo Web Server với Node.js (`bai02.js`)
+* **[bt3](./Bài%2003%20-%20Module,%20File%20System%20và%20cơ%20sở%20dữ%20liệu/bt3/):** Bài 3. Thao tác tập tin bằng File System (`bai03.js`)
+* **[bt4](./Bài%2003%20-%20Module,%20File%20System%20và%20cơ%20sở%20dữ%20liệu/bt4/):** Bài 4. Thêm và hiển thị dữ liệu MongoDB (`bai04.js`)
+* **[bt5](./Bài%2003%20-%20Module,%20File%20System%20và%20cơ%20sở%20dữ%20liệu/bt5/):** Bài 5. Tìm kiếm, cập nhật và sắp xếp MongoDB (`bai05.js`)
+* **[bt6](./Bài%2003%20-%20Module,%20File%20System%20và%20cơ%20sở%20dữ%20liệu/bt6/):** Bài 6. Xây dựng Module tính kết quả học tập (`xulyDiem.js`, `bai06.js`)
+* **[bt7](./Bài%2003%20-%20Module,%20File%20System%20và%20cơ%20sở%20dữ%20liệu/bt7/):** Bài 7. Xử lý tham số URL trên Web Server (`bai07.js`)
+* **[bt8](./Bài%2003%20-%20Module,%20File%20System%20và%20cơ%20sở%20dữ%20liệu/bt8/):** Bài 8. Quản lý tập tin với File System (`bai08.js`)
+* **[bt9](./Bài%2003%20-%20Module,%20File%20System%20và%20cơ%20sở%20dữ%20liệu/bt9/):** Bài 9. Xóa dữ liệu có điều kiện trong MongoDB (`bai09.js`)
+* **[bt10](./Bài%2003%20-%20Module,%20File%20System%20và%20cơ%20sở%20dữ%20liệu/bt10/):** Bài 10. Liên kết hai Collection trong MongoDB (`bai10.js`)
+
+---
+
+### [Bài 04 - Xây dựng web với nền tảng Express](./Bài%2004%20-%20Xây%20dựng%20web%20với%20nền%20tảng%20Express/)
+* **[Bt01](./Bài%2004%20-%20Xây%20dựng%20web%20với%20nền%20tảng%20Express/Bt01/):** Bài 01. Xây dựng website giới thiệu cá nhân (`app.js`)

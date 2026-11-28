@@ -1,0 +1,21 @@
+{
+  "name": "bai04-baitapvidu",
+  "version": "1.0.0",
+  "description": "Bài 04 - Bài tập ví dụ: Các ví dụ Express.js (App đầu tiên, Route, Middleware, Pug, Error Handling, MVC Calculator)",
+  "main": "app.js",
+  "scripts": {
+    "vidu1": "node app.js",
+    "vidu2": "node express_route.js",
+    "vidu3": "node express_middleware.js",
+    "vidu4": "node express_pug.js",
+    "vidu5": "node express_errorhandling.js",
+    "vidu6": "node my-express-app/app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "pug": "^3.0.3"
+  },
+  "author": "Lê Trần Thạnh - CD-CNTT18B27",
+  "license": "ISC"
+}

@@ -36,4 +36,5 @@
 ---
 
 ### [Bài 04 - Xây dựng web với nền tảng Express](./Bài%2004%20-%20Xây%20dựng%20web%20với%20nền%20tảng%20Express/)
+* **[Baitapvidu](./Bài%2004%20-%20Xây%20dựng%20web%20với%20nền%20tảng%20Express/Baitapvidu/):** Bài tập ví dụ (6 ví dụ Express.js + MVC Calculator)
 * **[Bt01](./Bài%2004%20-%20Xây%20dựng%20web%20với%20nền%20tảng%20Express/Bt01/):** Bài 01. Xây dựng website giới thiệu cá nhân (`app.js`)
